@@ -19,6 +19,7 @@ namespace Assignment_2_Arrays_APP
         private int[] thirdArray = new int[MAX_SIZE];
         private int i = 0;
         private int count = 0;
+        private string[] allNumbers = new string[MAX_SIZE];
         public Form1()
         {
             InitializeComponent();
@@ -56,23 +57,43 @@ namespace Assignment_2_Arrays_APP
                     // Adds the user input values to the arrays
                     if (count <= 4)
                     {
-                        int numOne = Convert.ToInt32(txtBxFstArr.Text);
-                        int numTwo = Convert.ToInt32(txtBxSecArr.Text);
+                        try
+                        {
+                            int numOne = Convert.ToInt32(txtBxFstArr.Text);
+                            int numTwo = Convert.ToInt32(txtBxSecArr.Text);
 
-                        firstArray[i] = numOne;
-                        secondArray[i] = numTwo;
+                            firstArray[i] = numOne;
+                            secondArray[i] = numTwo;
 
-                        lstFrsArr.Items.Add(txtBxFstArr.Text);
-                        lstSecArr.Items.Add(txtBxSecArr.Text);
+                            lstFrsArr.Items.Add(txtBxFstArr.Text);
+                            lstSecArr.Items.Add(txtBxSecArr.Text);
+                             
+                            int numMult = firstArray[i] * secondArray[i];
+                            thirdArray[i] = numMult;
 
-                        ++count; 
-                        i++;
+                            ++count;
+                            i++;
+                        }
+                        catch(FormatException err)
+                        {
+                            MessageBox.Show(err.Message, "Warning!");
+                        }
+                        catch(OutOfMemoryException err)
+                        {
+                            MessageBox.Show(err.Message, "Warning!");
+                        }
+                        catch(IndexOutOfRangeException err)
+                        {
+                            MessageBox.Show(err.Message, "Warning!");
+                        }
+                        catch(OverflowException err)
+                        {
+                            MessageBox.Show(err.Message, "Warning!");
+                        }
+                        
 
                         txtBxFstArr.Clear();
                         txtBxSecArr.Clear();
-
-                        int numMult = firstArray[i] * secondArray[i];
-                        thirdArray[i] = numMult;
                     }
                     else
                     {
@@ -83,22 +104,44 @@ namespace Assignment_2_Arrays_APP
                     }
                     
                 }
+                txtBxFstArr.Focus();
             }
         }
 
         private void btnDisp_Click(object sender, EventArgs e)
         {
-            string firstArr = "";
-            string secondArr = "";
-            string thirdArr = "";
-            for (i = 0; i <= 4; i++)
-            {
-                 firstArr = Convert.ToString(firstArray[i]);
-                 secondArr = Convert.ToString(secondArray[i]);
-                 thirdArr = Convert.ToString(thirdArray[i]);
 
+            for (int x = 0; x <= 4; x++)
+            {
+                allNumbers[x] = "\n" + "First Array Values: " + Convert.ToString(firstArray[x]) + "\n" + 
+                                "Second Array Values: " + Convert.ToString(secondArray[x]) + "\n" + 
+                                "Third Array Values: " + Convert.ToString(thirdArray[x]) + "\n";
+                LblArrVal.Text += allNumbers[x];
             }
-            MessageBox.Show("First Array Values: " + firstArr+ "/n" +)
+
+            LblArrVal.Visible = true;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtBxFstArr.Clear();
+            txtBxSecArr.Clear();
+            txtBxFstArr.Focus();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            i = 0;
+            count = 0;
+            LblArrVal.Visible = false;
+            txtBxFstArr.Clear();
+            txtBxSecArr.Clear();
+            lstFrsArr.Items.Clear();
+            lstSecArr.Items.Clear();
+            Array.Clear(firstArray, 0, firstArray.Length);
+            Array.Clear(secondArray, 0, secondArray.Length);
+            Array.Clear(thirdArray, 0, thirdArray.Length);
+            LblArrVal.Text = "Array Values";
         }
     }
 }

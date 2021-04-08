@@ -8,3 +8,13 @@ C:\Users\Student\Desktop\IU COURSES\PRG Classes\PRG 321\WEEK 2\Assignment2\Assig
 C:\Users\Student\Desktop\IU COURSES\PRG Classes\PRG 321\WEEK 2\Assignment2\Assignment 2 Arrays APP\Assignment 2 Arrays APP\obj\Debug\Assignment 2 Arrays APP.csproj.CoreCompileInputs.cache
 C:\Users\Student\Desktop\IU COURSES\PRG Classes\PRG 321\WEEK 2\Assignment2\Assignment 2 Arrays APP\Assignment 2 Arrays APP\obj\Debug\Assignment 2 Arrays APP.exe
 C:\Users\Student\Desktop\IU COURSES\PRG Classes\PRG 321\WEEK 2\Assignment2\Assignment 2 Arrays APP\Assignment 2 Arrays APP\obj\Debug\Assignment 2 Arrays APP.pdb
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\bin\Debug\Assignment 2 Arrays APP.exe.config
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\bin\Debug\Assignment 2 Arrays APP.exe
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\bin\Debug\Assignment 2 Arrays APP.pdb
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\obj\Debug\Assignment 2 Arrays APP.csprojAssemblyReference.cache
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\obj\Debug\Assignment_2_Arrays_APP.Form1.resources
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\obj\Debug\Assignment_2_Arrays_APP.Properties.Resources.resources
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\obj\Debug\Assignment 2 Arrays APP.csproj.GenerateResource.cache
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\obj\Debug\Assignment 2 Arrays APP.csproj.CoreCompileInputs.cache
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\obj\Debug\Assignment 2 Arrays APP.exe
+C:\Users\jeyso\OneDrive\Documents\GitHub\C-_GUI_Projects\Assignment 2 Arrays APP\obj\Debug\Assignment 2 Arrays APP.pdb
